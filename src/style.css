@@ -1,0 +1,328 @@
+.header {
+    width: 100%;
+    height: 70px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: darkblue;
+}
+
+.page-title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: oblique;
+    cursor: default;
+}
+
+.home-btn, .movies-btn, .tv-shows-btn, .people-btn {
+    width: 10%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 0.7em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.movies-dropdown {
+    width: 12%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 55%;
+    align-items: center;
+    background-color: white;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.tv-shows-dropdown {
+    width: 12%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    right: 17%;
+    align-items: center;
+    background-color: white;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.movies-dropdown > *, .tv-shows-dropdown > * {
+    height: 25%;
+    border: solid 1px white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.movies-dropdown > *:hover, .tv-shows-dropdown > *:hover {
+    background-color: rgba(0, 0, 255, 0.9);
+    color: white;
+}
+
+.search-div-container {
+    width: 100%;
+    height: 50vh;
+    background-size: 100% 100%;
+    overflow: hidden;
+    transform: translateY(5vh);
+}
+
+.search-div {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 255, 0.5);
+    font-size: 3em;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-message {
+    font-size: 80%;
+    transform: translateX(-4vw);
+}
+
+.home-search-bar {
+    width: 90%;
+    height: 15%;
+    border-radius: 25px;
+    transform: translateY(-4vh);
+    font-size: 50%;
+    border: solid 2px black;
+}
+
+.query-type {
+    width: 30%;
+    padding-left: 2%;
+    transform: translateY(5vh);
+    font-size: 2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.trending-div {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    transform: translate(0, 5vh);
+}
+
+.upcoming-div {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    transform: translate(0, 10vh);
+}
+
+.upcoming {
+    width: 30%;
+    padding-left: 2%;
+    transform: translateY(7vh);
+    font-size: 2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.details-container {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    top: 12%;
+}
+
+.details {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 255, 0.5);
+    color: white;
+}
+
+.details-poster {
+    height: 80%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    border-radius: 10px;
+}
+
+.details-text {
+    position: absolute;
+    left: 35%;
+    transform: translateY(5vh);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.movies-shows-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10%;
+    color: black;
+    top: 40%;
+}
+
+.load-more {
+    width: 50%;
+    height: 10vh;
+    background-color: white;
+    position: absolute;
+    align-self: flex-end;
+    text-align: center;
+    color: darkblue;
+    border-radius: 10px;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.all-movies-shows, .all-people {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 3px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    height: 450px;
+    cursor: pointer;
+}
+
+body {
+    margin: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+body::-webkit-scrollbar {
+    width: 1vw;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    bottom: 0;
+    background-color: black;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.copyright {
+    display: flex;
+    width: 20%;
+    color: white;
+}
+
+.fa {
+    height: 40%;
+    width: 5%;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .search-div {
+        font-size: 2em;
+        padding-left: 5vw;
+    }
+
+    .page-title {
+        font-size: 1.1em;
+    }
+
+    .home-btn, .movies-btn, .tv-shows-btn, .people-btn {
+        width: 20%;
+        height: 50%;
+        font-size: 0.6em;
+    }
+
+    .home-search-bar {
+        position: relative;
+        left: -5vw;
+    }
+
+    .details:nth-child(1) {
+        width: 10%
+    }
+
+    .trending-div::-webkit-scrollbar, .upcoming-div::-webkit-scrollbar {
+        height: 1vh;
+    }
+
+    .trending-div::-webkit-scrollbar-track, .upcoming-div::-webkit-scrollbar-track {
+        background-color: white;
+    }
+
+    .trending-div::-webkit-scrollbar-thumb, .upcoming-div::-webkit-scrollbar-thumb {
+        background-color: gray;
+    }
+}
